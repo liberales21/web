@@ -3101,11 +3101,11 @@ img.u-pull-left {
 .s-intro__content {
     z-index        : 1;
     max-width      : var(--width-wider);
-    align-items    : flex-end;
+    align-items    : center;
     height         : 100vh;
     min-height     : calc(25.5 * var(--space));
     padding-top    : 20vh;
-    padding-bottom : 32rem;
+    padding-bottom : 25rem;
     position       : relative;
 }
 

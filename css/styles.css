@@ -1597,7 +1597,7 @@ hr.fancy::before {
     line-height : calc(1.125 * var(--space));
     color       : var(--color-text);
     font-weight: bold;
-    text-align: justify;
+    text-align: left;
 }
 
 .slave {
@@ -1607,7 +1607,7 @@ hr.fancy::before {
     line-height : calc(1.125 * var(--space));
     color       : var(--color-text);
     font-weight: normal;
-    text-align: justify;
+    text-align: left;
 }
 
 .pull-quote {
@@ -2801,9 +2801,9 @@ img.u-pull-left {
 }
 
 .s-header__logo img {
-    width          : var(--logo-width);
+    width          : 105px;
     margin         : 0;
-    vertical-align : bottom;
+    vertical-align : text-top;
 }
 
 /* --------------------------------------------------------------------
@@ -2845,7 +2845,6 @@ img.u-pull-left {
 @media screen and (max-width: 800px) {
     .s-header {
         --logo-width : 8rem;
-        top          : var(--vspace-0_5);
     }
 
     .s-header__social {
@@ -2878,7 +2877,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 500px) {
     .s-header {
-        top : 0;
+        top   : var(--vspace-0_75);
     }
 }
 
@@ -3104,7 +3103,7 @@ img.u-pull-left {
     align-items    : center;
     height         : 100vh;
     min-height     : calc(25.5 * var(--space));
-    padding-top    : 20vh;
+    padding-top    : 22vh;
     padding-bottom : 25rem;
     position       : relative;
 }
@@ -3124,6 +3123,7 @@ img.u-pull-left {
     margin-top    : 0;
     margin-bottom : var(--vspace-0_25);
     font-weight: bold;
+    text-align: left;
 }
 
 /* --------------------------------------------------------------------
@@ -3172,10 +3172,11 @@ img.u-pull-left {
 
 .s-intro__scroll .scroll-text {
     font-family : var(--font-1);
-    font-weight : 300;
-    font-size   : var(--text-sm);
+    font-weight: bold;
+    font-size   : 25px;
     color       : white;
     margin-top  : var(--vspace-0_625);
+    text-
 }
 
 .s-intro__scroll .end-top {
@@ -3366,7 +3367,7 @@ img.u-pull-left {
     }
 
     .s-intro__content-bottom br {
-        display : none;
+        display:block !important;
     }
 
     .s-intro__content-title {
